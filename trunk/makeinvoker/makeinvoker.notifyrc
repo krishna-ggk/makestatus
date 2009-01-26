@@ -1,0 +1,22 @@
+[Global]
+Comment=A d-bus enable make wrapper
+
+[Event/MakeCompleted]
+Name=Make completed successfully
+Comment=Make completed without any error or warnings
+Action=Popup
+
+[Event/MakeCompletedWithWarnings]
+Name=Make completed with warnings
+Comment=Make completed with some warnings
+Action=Popup
+
+[Event/MakeCompletedWithErrors]
+Name=Make completed with errors
+Comment=Make completed with some errors
+Action=Popup
+
+[Event/MakeCrashed]
+Name=Make crashed!
+Comment=Make command crashed
+Action=Popup
