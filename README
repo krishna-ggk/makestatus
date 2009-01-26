@@ -1,0 +1,40 @@
+Makestatus is developer oriented plasmoid which displays the make
+progress in convenient manner.
+
+MakeStatus comprises of plasmoid(applet), D-Bus enabled dataengine and
+a make wrapper called makeinvoker which acts as an informer to
+dataengine using d-bus calls.
+
+To use it, you need all the three of the combo.
+
+COMPILING INSTRUCTIONS
+--------- ------------
+
+cd <builddir>
+cmake -DCMAKE_DEBUG_TYPE=debugfull -DCMAKE_INSTALL_PREFIX=<prefix>
+make
+make install
+
+
+USAGE INSTRUCTIONS
+------------------
+
+If you don't reboot ensure you run the following commands to let know
+plasma of the new plasmoid availability.
+
+kquitapp plasma
+kbuildsycoca4
+plasma
+
+After that, you can add the plasmoid as normally add.. Panel however
+seems to be best place IMHO.
+
+From now on, use 'makeinvoker' in place of make. You can pass the make
+arguments to the makeinvoker as you used to pass it to make.
+
+
+
+NOTE:
+-----
+This is my first plasmoid and has rough edges. So please excuse that :)
+And you can contact me at krishna.ggk[no-spam]AT gmail dot com
